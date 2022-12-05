@@ -1,0 +1,14 @@
+.btnLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.modalLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
