@@ -1,0 +1,44 @@
+
+
+.homePageImage {
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.btnheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.btnheader button{
+    align-content: center;
+    justify-content:space-between;
+        
+}
+
+.imgbody {
+    height: 78vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 15vw;
+}
+
+.imgfooter {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    column-gap: 5vw;
+}
+
+.logobtn {
+    height: 10vh;
+}
