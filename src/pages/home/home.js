@@ -6,7 +6,7 @@ import ANS from "./../../images/ANS.png";
 import SIREJUD from "./../../images/sirejud.png";
 import "./home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Login from "../../components/LoginModal";
+import Login from "../../components/User/LoginModal.js";
 
 
 function Home() {

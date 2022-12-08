@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Button, Card, Container, FloatingLabel, Form } from "react-bootstrap";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from "react-router-dom";
+import { api } from '../../api/api.js';
 
 function Register() {
 
@@ -19,30 +22,39 @@ function Register() {
         setForm({ ...form, [e.target.name]: e.target.value })
     }
 
+
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        await console.log(form);
+        console.log(form);
+        
+        if(form.email === form.confirmEmail && form.password === form.confirmPassword) {
 
-        // try {
-        //     // criar a requisição para enviar este novo usuário
-        //         // requisição método POST
-        //     await api.post("/user/register", { ...form })
+            await console.log(form);
+        
+        try {
+            // criar a requisição para enviar este novo usuário
+                // requisição método POST
+            await api.post("/user/register", { ...form })
     
-        //     navigate('/login')
-        // } catch (error) {
-        //     console.log(error)
-        // }
+            navigate('/login')
+        } catch (error) {
+            console.log(error)
+        } 
+        
+        } else {
+            toast.warn('Confira a senha e/ou email informados!', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                });
+        }
     };
-
-
-
-
-
-
-    ///////
-
-
 
 	return (
 		<Container style={{ height: "100vh",
