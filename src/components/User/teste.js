@@ -11,8 +11,6 @@ function Teste() {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        
-
         toast.success('Novo vinho cadastrado!', {
             position: "top-right",
             autoClose: 2000,

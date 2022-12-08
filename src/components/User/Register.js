@@ -56,11 +56,6 @@ function Register() {
         }
     };
 
-   
-   
-
-    ///////
-
 	return (
 		<Container style={{ height: "100vh",
                         display: "flex", 
