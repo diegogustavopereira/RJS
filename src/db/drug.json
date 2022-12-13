@@ -1,0 +1,628 @@
+[
+    {
+        "name": "Abiraterona, Acetato de",
+        "places": [
+            {
+                "place": "Próstata ",
+                "recommendation": "Metastático resistente à castração que são assintomáticos ou levemente sintomáticos, após falha à terapia de privação androgênica"                
+            },
+            {
+                "place": "Próstata",
+                "recommendation": "Avançado metastático resistente à castração e que receberam quimioterapia prévia com docetaxel"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Afatinibe",
+        "places": [
+            {
+                "place": "Pulmão não pequenascélulas",
+                "recommendation": "Primeira linha, para pacientes adultos, com câncer de pulmão não pequenas células (CPNPC), com histologia de adenocarcinoma, localmente avançado ou metastático, com mutações no receptor do fator de crescimento epidermóide (EGFR), não tratados previamente com inibidores da tirosina quinase do EGFR."                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Anastrozol ",
+        "places": [
+            {
+                "place": "Mama",
+                "recommendation": "Adjuvante na pós-menopausa em mulheres com tumor receptor hormonal positivo"                
+            },
+            {
+                "place": "Mama",
+                "recommendation": "Primeira linha de tratamento em mulheres na pósmenopausa com câncer de mama metastático receptor hormonal positivo"                
+            },
+            {
+                "place": "Mama",
+                "recommendation": "Câncer de mama metastático em mulheres na pósmenopausa com progressão da doença em uso de tamoxifeno "                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Bicalutamida",
+        "places": [
+            {
+                "place": "Próstata",
+                "recommendation": "Avançado em combinação com o tratamento com análogos do LHRH ou castração cirúrgica"                
+            },
+            {
+                "place": "Próstata",
+                "recommendation": "Metastático em pacientes nos quais a castração cirúrgica ou medicamentosa não está indicada ou não é aceitável."                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Bussulfano",
+        "places": [
+            {
+                "place": "LMC - Leucemia Mielocítica (mielóide, mielógena, granulocítica) Crônica",
+                "recommendation": "Sem especificação de fase da doença"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Capecitabina",
+        "places": [
+            {
+                "place": "Colorretal",
+                "recommendation": "Primeira Linha em câncer metatático"                
+            },
+            {
+                "place": "Colorretal",
+                "recommendation": "Adjuvante para pacientes em estágio II com critério de alto risco ou Dukes C (estágio III), submetidos à ressecção completa do tumor primário"                
+            },
+            {
+                "place": "Gástrico",
+                "recommendation": "Câncer em estágio avançado, desde que associado com compostos de platina, como a cisplatina ou oxaliplatina"                
+            },
+            {
+                "place": "Mama",
+                "recommendation": "Metastático, após falha de antraciclina ou taxano, ou em face de contraindicação para estas medicações"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Ciclofosfamida",
+        "places": [
+            {
+                "place": "Leucemias",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Linfomas",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Mam",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Micose Fungóide",
+                "recommendation": "Estágios avançados"                
+            },
+            {
+                "place": "Mieloma Múltiplo",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Neuroblastomas",
+                "recommendation": "Em pacientes com disseminação"                
+            },
+            {
+                "place": "Ovário",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Retinoblastomas",
+                "recommendation": "Sem especificação de fase da doença"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Clorambucila",
+        "places": [
+            {
+                "place": "Linfoma de Hodgkin",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Linfoma Não-Hodgkin",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "LLC - Leucemia Linfocítica Crônica",
+                "recommendation": "Sem especificação de fase da doença"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Crizotinibe",
+        "places": [
+            {
+                "place": "Pulmão não pequenas células",
+                "recommendation": "Cromossomo Ph+ com resistência ou intolerância à terapia anterior"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Dasatinibe",
+        "places": [
+            {
+                "place": "LLA - Leucemia Linfocítica (Linfoblástica) Aguda",
+                "recommendation": "Cromossomo Ph+ com resistência ou intolerância à terapia anterior"                
+            },
+            {
+                "place": "LMC - Leucemia Mielocítica (mielóide, mielógena, granulocítica) Crônica",
+                "recommendation": "Fases crônica, acelerada ou blástica mieloide/linfoide com resistência ou intolerância ao tratamento anterior incluindo imatinibe"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Dabrafenibe",
+        "places": [
+            {
+                "place": "Melanoma",
+                "recommendation": "Melanoma metastático ou irressecável com mutação do gene BRAF V600E"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Dietiletilbestrol",
+        "places": [
+            {
+                "place": "Mama",
+                "recommendation": "casos paliativos"                
+            },
+            {
+                "place": "Próstata",
+                "recommendation": "casos paliativos"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Enzalutamida",
+        "places": [
+            {
+                "place": "Próstata",
+                "recommendation": "Metastático resistente à castração em homens que receberam quimioterapia prévia com Docetaxel"                
+            },
+            {
+                "place": "Próstata",
+                "recommendation": "Metastático resistente à castração em adultos que são assintomáticos ou ligeiramente sintomáticos após falha de terapia de privação androgênica"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Erlotinibe, Cloridrato de",
+        "places": [
+            {
+                "place": "Pulmão não pequenas células",
+                "recommendation": "câncer de pulmão de não pequenas células não escamoso; Indicado em primeira linha nos pacientes com doença metastática ou irressecável com  mutação nos éxons 19 ou 21"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Etoposídeo",
+        "places": [
+            {
+                "place": "Leucemias agudas",
+                "recommendation": "Não linfocíticas"                
+            },
+            {
+                "place": "Linfoma de Hodgkin",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Linfoma Não-Hodgkin",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Pulmão pequenas células",
+                "recommendation": "Em combinação com outros agentes quimioterápicos"                
+            },
+            {
+                "place": "Testículo",
+                "recommendation": "Tumores refratários que já receberam tratamento cirúrgico, quimioterápico e radioterápico apropriados"
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Everolimus",
+        "places": [
+            {
+                "place": "Mama",
+                "recommendation": "câncer de mama metastático receptor hormonal positivo após falha de primeira linha hormonal, em associação com exemestano"                
+            },
+            {
+                "place": "Pâncreas",
+                "recommendation": "Pacientes com tumores neuroendócrinos avançados (TNE) localizados no pâncreas"                
+            },
+            {
+                "place": "Estômago",
+                "recommendation": "Pacientes com tumores neuroendócrinos avançados (NET) localizados no estômago"                
+            },
+            {
+                "place": "Intestino",
+                "recommendation": "Pacientes com tumores neuroendócrinos avançados (NET) localizados no intestino"                
+            },
+            {
+                "place": "Pulmão",
+                "recommendation": "Pacientes com tumores neuroendócrinos avançados (NET) localizados no pulmão"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Exemestano",
+        "places": [
+            {
+                "place": "Mama",
+                "recommendation": "Adjuvante em mulheres na pós-menopausa com tumor receptor hormonal positivo, seja de início imediato ou após 2-3 anos de tratamento com tamoxifeno"                
+            },
+            {
+                "place": "Mama",
+                "recommendation": "Câncer de mama metastático em mulheres na menopausa, com tumores receptor hormonal positivo, seja em primeira linha, seja após falha de moduladores de receptor de estrógeno"                
+            },
+            {
+                "place": "Mama",
+                "recommendation": "Terapia pré-operatória em mulheres na pósmenopausa com câncer de mama localmente avançado receptor hormonal positivo, com a intenção de permitir cirurgia conservadora da mama"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Fludarabina",
+        "places": [
+            {
+                "place": "LLC - Leucemia Linfocítica Crônica",
+                "recommendation": "Tumores de células B"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Flutamida",
+        "places": [
+            {
+                "place": "Próstata",
+                "recommendation": "Indicado como monoterapia (com ou sem orquiectomia) ou em combinação com um agonista LHRH ('luteinizing hormone-releasing hormone'), no tratamento do câncer avançado em pacientes nãotratados previamente ou em pacientes que não responderam ou se tornaram refratários à castração"
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Gefitinibe",
+        "places": [
+            {
+                "place": "LMC - Leucemia Mielocítica (mielóide, mielógena, granulocítica) Crônica",
+                "recommendation": "Fase crônica"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Imatinibe",
+        "places": [
+            {
+                "place": "LLA - Leucemia Linfocítica (Linfoblástica) Aguda",
+                "recommendation": "Cromossomo Ph+ recaída ou refratária"                
+            },
+            {
+                "place": "LMC - Leucemia Mielocítica (mielóide, mielógena, granulocítica) Crônica",
+                "recommendation": "Recém diagnosticada LMC Cromossomo Ph+ fase crônica; crise blástica; fase acelerada; fase crônica após falha de interferon"                
+            },
+            {
+                "place": "Tumor estromal gastrintestinal (GIST)",
+                "recommendation": "Irressecável ou metastático "                
+            },
+            {
+                "place": "Tumor estromal gastrintestinal (GIST)",
+                "recommendation": "Adjuvante do tratamento de casos ressecados de alto risco"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Lapatinibe, Ditosilato de",
+        "places": [
+            {
+                "place": "Mama",
+                "recommendation": "Tratamento do tumor metastático HER2+ , após falha de trastuzumabe, em associação com capecitabina ou letrozol"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Letrozol",
+        "places": [
+            {
+                "place": "Mama",
+                "recommendation": "Neoadjuvante, adjuvante ou metástatico em mulheres na pós-menopausa com tumores receptor hormonal positivo"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Megestrol, Acetato de",
+        "places": [
+            {
+                "place": "Endométrio",
+                "recommendation": "Como paliativo do carcinoma avançado (doença recorrente, inoperável ou metastática)"                
+            },
+            {
+                "place": "Mama",
+                "recommendation": "Como paliativo do carcinoma avançado (doença recorrente, inoperável ou metastática)"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Melfalano",
+        "places": [
+            {
+                "place": "Mieloma Múltiplo",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Ovário",
+                "recommendation": "Câncer Avançado"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Mercaptopurina",
+        "places": [
+            {
+                "place": "LLA - Leucemia Linfocítica (Linfoblástica) Aguda",
+                "recommendation": "Indução da remissão e manutenção"                
+            },
+            {
+                "place": "LMA - Leucemia Mielóide (mielocítica, mielógena, mieloblástica, mielomonocítica) Aguda",
+                "recommendation": "Indução da remissão e manutenção"                
+            },
+            {
+                "place": "LMC - Leucemia Mielocítica (mielóide, mielógena, granulocítica) Crônica",
+                "recommendation": "Sem especificação de fase da doença"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Metotrexato",
+        "places": [
+            {
+                "place": "Cabeça e pescoço",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Linfoma não-Hodgkin",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "LLA - Leucemia Linfocítica (Linfoblástica) Aguda",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Mama",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Sarcoma osteogênico",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "Tumor trofloblástico gestacional",
+                "recommendation": "Sem especificação de fase da doença"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Mitotano",
+        "places": [
+            {
+                "place": "Córtex suprarenal",
+                "recommendation": "Carcinoma inoperável"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Nilotinibe",
+        "places": [
+            {
+                "place": "LMC - Leucemia Mielocítica (mielóide, mielógena, granulocítica) Crônica",
+                "recommendation": "Fase crônica, acelerada, Ph+ resistentes ou intolerantes a terapia prévia incluindo imatinibe"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Pazopanibe",
+        "places": [
+            {
+                "place": "Rim",
+                "recommendation": "irressecável ou metastático em primeira linha"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Ruxolitinibe",
+        "places": [
+            {
+                "place": "Mielofibrose",
+                "recommendation": "Pacientes com mielofibrose de risco intermediário ou alto, incluindo mielofibrose primária, mielofibrose pós-policitemia vera ou mielofibrose pós-trombocitemia essencial"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Sorafenibe",
+        "places": [
+            {
+                "place": "Hepatocarcinoma",
+                "recommendation": "Hepatocarcinoma avançado em pacientes child A"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Sunitinibe, Malato de",
+        "places": [
+            {
+                "place": "Tumor estromal gastrintestinal (GIST)",
+                "recommendation": "Tumor estromal gastrintestinal (GIST) após progressão da doença em uso de imatinibe ou intolerância ao imatinibe"                
+            },
+            {
+                "place": "Rim",
+                "recommendation": "irressecável ou metastático em primeira linha"                
+            },
+            {
+                "place": "Pâncreas",
+                "recommendation": "Pacientes com tumores neuroendócrinos avançados (NET) localizados no pâncreas"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Tamoxifeno, Citrato de",
+        "places": [
+            {
+                "place": "Mama",
+                "recommendation": "Neoadjuvante, adjuvante ou metástatico em carcinoma de mama com tumores receptor hormonal positivo"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Temozolamida",
+        "places": [
+            {
+                "place": "SNC - Sistema Nervoso Central",
+                "recommendation": "Glioblastoma multiforme em adjuvância ou doença recidivada"                
+            },
+            {
+                "place": "SNC - Sistema Nervoso Central",
+                "recommendation": "Glioma maligno, tal como glioblastoma multiforme ou astrocitoma anaplásico, recidivante ou progressivo após terapia padrão"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Tioguanina",
+        "places": [
+            {
+                "place": "LLA - Leucemia Linfocítica (Linfoblástica) Aguda",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "LMA - Leucemia Mielóide (mielocítica, mielógena, mieloblástica, mielomonocítica) Aguda",
+                "recommendation": "Sem especificação de fase da doença"                
+            },
+            {
+                "place": "LMC - Leucemia Mielocítica (mielóide, mielógena, granulocítica) Crônica",
+                "recommendation": "Sem especificação de fase da doença"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Topotecana, Cloridrato de",
+        "places": [
+            {
+                "place": "Pulmão pequenas células",
+                "recommendation": "Casos de recaída após falha de quimioterápico de 1a linha"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Tretinoína (ATRA)",
+        "places": [
+            {
+                "place": "Leucemia Promielocítica",
+                "recommendation": "Indução de remissão"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Vemurafenibe",
+        "places": [
+            {
+                "place": "Melanoma",
+                "recommendation": "Metastático com mutação V600 do gene BRAF, primeira linha"                
+            }
+        ]
+        
+    },
+
+    {
+        "name": "Vinorelbina",
+        "places": [
+            {
+                "place": "Pulmão",
+                "recommendation": "Carcinoma de pulmão não pequenas células"                
+            },
+            {
+                "place": "Mama",
+                "recommendation": "Carcinoma de mama"                
+            }
+        ]
+    }
+]

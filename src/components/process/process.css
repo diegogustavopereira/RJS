@@ -1,0 +1,24 @@
+
+.ant-table-thead>tr>th {
+    background-color: #abe4ff !important;
+}
+
+
+
+
+
+/* //custom-table.css
+
+.ant-table-tbody .ant-table-row:nth-child(even) {
+  background-color: gray;
+}
+
+.ant-table-row {
+  font-size: 20px;
+  height: 64px;
+}
+
+.ant-table-tbody > tr.ant-table-row:hover > td,
+.ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background-color: lightgray;
+} */
