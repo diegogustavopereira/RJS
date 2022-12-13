@@ -1,0 +1,684 @@
+[
+ {
+  "CID": "C00",
+  "disease": " Neoplasia Maligna do Lábio"
+ },
+ {
+  "CID": "C01",
+  "disease": " Neoplasia Maligna da Base da Língua"
+ },
+ {
+  "CID": "C02",
+  "disease": " Neoplasia Maligna de Outras Partes e de Partes Não Especificadas da Língua"
+ },
+ {
+  "CID": "C03",
+  "disease": " Neoplasia Maligna da Gengiva"
+ },
+ {
+  "CID": "C04",
+  "disease": " Neoplasia Maligna do Assoalho da Boca"
+ },
+ {
+  "CID": "C05",
+  "disease": " Neoplasia Maligna do Palato"
+ },
+ {
+  "CID": "C06",
+  "disease": " Neoplasia Maligna de Outras Partes e de Partes Não Especificadas da Boca"
+ },
+ {
+  "CID": "C07",
+  "disease": " Neoplasia Maligna da Glândula Parótida"
+ },
+ {
+  "CID": "C08",
+  "disease": " Neoplasia Maligna de Outras Glândulas Salivares Maiores e as Não Especificadas"
+ },
+ {
+  "CID": "C09",
+  "disease": " Neoplasia Maligna da Amígdala"
+ },
+ {
+  "CID": "C10",
+  "disease": " Neoplasia Maligna da Orofaringe"
+ },
+ {
+  "CID": "C11",
+  "disease": " Neoplasia Maligna da Nasofaringe"
+ },
+ {
+  "CID": "C12",
+  "disease": " Neoplasia Maligna do Seio Piriforme"
+ },
+ {
+  "CID": "C13",
+  "disease": " Neoplasia Maligna da Hipofaringe"
+ },
+ {
+  "CID": "C14",
+  "disease": " Neoplasia Maligna de Outras Localizações e de Localizações Mal Definida, do Lábio, Cavidade Oral e Faringe"
+ },
+ {
+  "CID": "C15",
+  "disease": " Neoplasia Maligna do Esôfago"
+ },
+ {
+  "CID": "C16",
+  "disease": " Neoplasia Maligna do Estômago"
+ },
+ {
+  "CID": "C17",
+  "disease": " Neoplasia Maligna do Intestino Delgado"
+ },
+ {
+  "CID": "C18",
+  "disease": " Neoplasia Maligna do Cólon"
+ },
+ {
+  "CID": "C19",
+  "disease": " Neoplasia Maligna da Junção Retossigmóide"
+ },
+ {
+  "CID": "C20",
+  "disease": " Neoplasia Maligna do Reto"
+ },
+ {
+  "CID": "C21",
+  "disease": " Neoplasia Maligna do Ânus e do Canal Anal"
+ },
+ {
+  "CID": "C22",
+  "disease": " Neoplasia Maligna do Fígado e Das Vias Biliares Intra-hepáticas"
+ },
+ {
+  "CID": "C23",
+  "disease": " Neoplasia Maligna da Vesícula Biliar"
+ },
+ {
+  "CID": "C24",
+  "disease": " Neoplasia Maligna de Outras Partes, e de Partes Não Especificadas Das Vias Biliares"
+ },
+ {
+  "CID": "C25",
+  "disease": " Neoplasia Maligna do Pâncreas"
+ },
+ {
+  "CID": "C26",
+  "disease": " Neoplasia Maligna de Outros Órgãos Digestivos e de Localizações Mal Definidas no Aparelho Digestivo"
+ },
+ {
+  "CID": "C30",
+  "disease": " Neoplasia Maligna da Cavidade Nasal e do Ouvido Médio"
+ },
+ {
+  "CID": "C31",
+  "disease": " Neoplasia Maligna Dos Seios da Face"
+ },
+ {
+  "CID": "C32",
+  "disease": " Neoplasia Maligna da Laringe"
+ },
+ {
+  "CID": "C33",
+  "disease": " Neoplasia Maligna da Traquéia"
+ },
+ {
+  "CID": "C34",
+  "disease": " Neoplasia Maligna Dos Brônquios e Dos Pulmões"
+ },
+ {
+  "CID": "C37",
+  "disease": " Neoplasia Maligna do Timo"
+ },
+ {
+  "CID": "C38",
+  "disease": " Neoplasia Maligna do Coração, Mediastino e Pleura"
+ },
+ {
+  "CID": "C39",
+  "disease": " Neoplasia Maligna de Outras Localizações e de Localizações Mal Definidas do Aparelho Respiratório e Dos Órgãos Intratorácicos"
+ },
+ {
+  "CID": "C40",
+  "disease": " Neoplasia Maligna Dos Ossos e Cartilagens Articulares Dos Membros"
+ },
+ {
+  "CID": "C41",
+  "disease": " Neoplasia Maligna Dos Ossos e Das Cartilagens Articulares de Outras Localizações e de Localizações Não Especificadas"
+ },
+ {
+  "CID": "C43",
+  "disease": " Melanoma Maligno da Pele"
+ },
+ {
+  "CID": "C44",
+  "disease": " Outras Neoplasias Malignas da Pele"
+ },
+ {
+  "CID": "C45",
+  "disease": " Mesotelioma"
+ },
+ {
+  "CID": "C46",
+  "disease": " Sarcoma de Kaposi"
+ },
+ {
+  "CID": "C47",
+  "disease": " Neoplasia Maligna Dos Nervos Periféricos e do Sistema Nervoso Autônomo"
+ },
+ {
+  "CID": "C48",
+  "disease": " Neoplasia Maligna Dos Tecidos Moles do Retroperitônio e do Peritônio"
+ },
+ {
+  "CID": "C49",
+  "disease": " Neoplasia Maligna do Tecido Conjuntivo e de Outros Tecidos Moles"
+ },
+ {
+  "CID": "C50",
+  "disease": " Neoplasia Maligna da Mama"
+ },
+ {
+  "CID": "C51",
+  "disease": " Neoplasia Maligna da Vulva"
+ },
+ {
+  "CID": "C52",
+  "disease": " Neoplasia Maligna da Vagina"
+ },
+ {
+  "CID": "C53",
+  "disease": " Neoplasia Maligna do Colo do Útero"
+ },
+ {
+  "CID": "C54",
+  "disease": " Neoplasia Maligna do Corpo do Útero"
+ },
+ {
+  "CID": "C55",
+  "disease": " Neoplasia Maligna do Útero, Porção Não Especificada"
+ },
+ {
+  "CID": "C56",
+  "disease": " Neoplasia Maligna do Ovário"
+ },
+ {
+  "CID": "C57",
+  "disease": " Neoplasia Maligna de Outros Órgãos Genitais Femininos e Dos Não Especificados"
+ },
+ {
+  "CID": "C58",
+  "disease": " Neoplasia Maligna da Placenta"
+ },
+ {
+  "CID": "C60",
+  "disease": " Neoplasia Maligna do Pênis"
+ },
+ {
+  "CID": "C61",
+  "disease": " Neoplasia Maligna da Próstata"
+ },
+ {
+  "CID": "C62",
+  "disease": " Neoplasia Maligna Dos Testículos"
+ },
+ {
+  "CID": "C63",
+  "disease": " Neoplasia Maligna de Outros Órgãos Genitais Masculinos e Dos Não Especificados"
+ },
+ {
+  "CID": "C64",
+  "disease": " Neoplasia Maligna do Rim, Exceto Pelve Renal"
+ },
+ {
+  "CID": "C65",
+  "disease": " Neoplasia Maligna da Pelve Renal"
+ },
+ {
+  "CID": "C66",
+  "disease": " Neoplasia Maligna Dos Ureteres"
+ },
+ {
+  "CID": "C67",
+  "disease": " Neoplasia Maligna da Bexiga"
+ },
+ {
+  "CID": "C68",
+  "disease": " Neoplasia Maligna de Outros Órgãos Urinários e Dos Não Especificados"
+ },
+ {
+  "CID": "C69",
+  "disease": " Neoplasia Maligna do Olho e Anexos"
+ },
+ {
+  "CID": "C70",
+  "disease": " Neoplasia Maligna Das Meninges"
+ },
+ {
+  "CID": "C71",
+  "disease": " Neoplasia Maligna do Encéfalo"
+ },
+ {
+  "CID": "C72",
+  "disease": " Neoplasia Maligna da Medula Espinhal, Dos Nervos Cranianos e de Outras Partes do Sistema Nervoso Central"
+ },
+ {
+  "CID": "C73",
+  "disease": " Neoplasia Maligna da Glândula Tireóide"
+ },
+ {
+  "CID": "C74",
+  "disease": " Neoplasia Maligna da Glândula Supra-renal (Glândula Adrenal)"
+ },
+ {
+  "CID": "C75",
+  "disease": " Neoplasia Maligna de Outras Glândulas Endócrinas e de Estruturas Relacionadas"
+ },
+ {
+  "CID": "C76",
+  "disease": " Neoplasia Maligna de Outras Localizações e de Localizações Mal Definidas"
+ },
+ {
+  "CID": "C77",
+  "disease": " Neoplasia Maligna Secundária e Não Especificada Dos Gânglios Linfáticos"
+ },
+ {
+  "CID": "C78",
+  "disease": " Neoplasia Maligna Secundária Dos Órgãos Respiratórios e Digestivos"
+ },
+ {
+  "CID": "C79",
+  "disease": " Neoplasia Maligna Secundária de Outras Localizações"
+ },
+ {
+  "CID": "C80",
+  "disease": " Neoplasia Maligna, Sem Especificação de Localização"
+ },
+ {
+  "CID": "C81",
+  "disease": " Doença de Hodgkin"
+ },
+ {
+  "CID": "C82",
+  "disease": " Linfoma Não-Hodgkin, Folicular (nodular)"
+ },
+ {
+  "CID": "C83",
+  "disease": " Linfoma Não-Hodgkin Difuso"
+ },
+ {
+  "CID": "C84",
+  "disease": " Linfomas de Células T Cutâneas e Periféricas"
+ },
+ {
+  "CID": "C85",
+  "disease": " Linfoma Não-Hodgkin de Outros Tipos e de Tipo Não Especificado"
+ },
+ {
+  "CID": "C88",
+  "disease": " Doenças Imunoproliferativas Malignas"
+ },
+ {
+  "CID": "C90",
+  "disease": " Mieloma Múltiplo e Neoplasias Malignas de Plasmócitos"
+ },
+ {
+  "CID": "C91",
+  "disease": " Leucemia Linfóide"
+ },
+ {
+  "CID": "C92",
+  "disease": " Leucemia Mielóide"
+ },
+ {
+  "CID": "C93",
+  "disease": " Leucemia Monocítica"
+ },
+ {
+  "CID": "C94",
+  "disease": " Outras Leucemias de Células de Tipo Especificado"
+ },
+ {
+  "CID": "C95",
+  "disease": " Leucemia de Tipo Celular Não Especificado"
+ },
+ {
+  "CID": "C96",
+  "disease": " Outras Neoplasias Malignas e as Não Especificadas Dos Tecidos Linfático, Hematopoético e Tecidos Correlatos"
+ },
+ {
+  "CID": "C97",
+  "disease": " Neoplasias Malignas de Localizações Múltiplas Independentes (primárias)"
+ },
+ null,
+ null,
+ {
+  "CID": "D00",
+  "disease": " Carcinoma in Situ da Cavidade Oral, do Esôfago e do Estômago"
+ },
+ {
+  "CID": "D01",
+  "disease": " Carcinoma in Situ de Outros Órgãos Digestivos"
+ },
+ {
+  "CID": "D02",
+  "disease": " Carcinoma in Situ do Ouvido Médio e do Aparelho Respiratório"
+ },
+ {
+  "CID": "D03",
+  "disease": " Melanoma in Situ"
+ },
+ {
+  "CID": "D04",
+  "disease": " Carcinoma in Situ da Pele"
+ },
+ {
+  "CID": "D05",
+  "disease": " Carcinoma in Situ da Mama"
+ },
+ {
+  "CID": "D06",
+  "disease": " Carcinoma in Situ do Colo do Útero (cérvix)"
+ },
+ {
+  "CID": "D07",
+  "disease": " Carcinoma in Situ de Outros Órgãos Genitais e Dos Não Especificados"
+ },
+ {
+  "CID": "D09",
+  "disease": " Carcinoma in Situ de Outras Localizações e Das Não Especificadas"
+ },
+ {
+  "CID": "D10",
+  "disease": " Neoplasia Benigna da Boca e da Faringe"
+ },
+ {
+  "CID": "D11",
+  "disease": " Neoplasia Benigna de Glândulas Salivares Maiores"
+ },
+ {
+  "CID": "D12",
+  "disease": " Neoplasia Benigna do Cólon, Reto, Canal Anal e Ânus"
+ },
+ {
+  "CID": "D13",
+  "disease": " Neoplasia Benigna de Outras Partes e de Partes Mal Definidas do Aparelho Digestivo"
+ },
+ {
+  "CID": "D14",
+  "disease": " Neoplasia Benigna do Ouvido Médio e do Aparelho Respiratório"
+ },
+ {
+  "CID": "D15",
+  "disease": " Neoplasia Benigna de Outros Órgãos Intratorácicos e Dos Não Especificados"
+ },
+ {
+  "CID": "D16",
+  "disease": " Neoplasia Benigna de Osso e de Cartilagem Articular"
+ },
+ {
+  "CID": "D17",
+  "disease": " Neoplasia Lipomatosa Benigna"
+ },
+ {
+  "CID": "D18",
+  "disease": " Hemangioma e Linfangioma de Qualquer Localização"
+ },
+ {
+  "CID": "D19",
+  "disease": " Neoplasia Benigna de Tecido Mesotelial"
+ },
+ {
+  "CID": "D20",
+  "disease": " Neoplasia Benigna de Tecido Mole do Retroperitônio e do Peritônio"
+ },
+ {
+  "CID": "D21",
+  "disease": " Outras Neoplasias Benignas do Tecido Conjuntivo e de Outros Tecidos Moles"
+ },
+ {
+  "CID": "D22",
+  "disease": " Nevos Melanocíticos"
+ },
+ {
+  "CID": "D23",
+  "disease": " Outras Neoplasias Benignas da Pele"
+ },
+ {
+  "CID": "D24",
+  "disease": " Neoplasia Benigna da Mama"
+ },
+ {
+  "CID": "D25",
+  "disease": " Leiomioma do Útero"
+ },
+ {
+  "CID": "D26",
+  "disease": " Outras Neoplasias Benignas do Útero"
+ },
+ {
+  "CID": "D27",
+  "disease": " Neoplasia Benigna do Ovário"
+ },
+ {
+  "CID": "D28",
+  "disease": " Neoplasia Benigna de Outros Órgãos Genitais Femininos e de Órgãos Não Especificados"
+ },
+ {
+  "CID": "D29",
+  "disease": " Neoplasia Benigna Dos Órgãos Genitais Masculinos"
+ },
+ {
+  "CID": "D30",
+  "disease": " Neoplasia Benigna Dos Órgãos Urinários"
+ },
+ {
+  "CID": "D31",
+  "disease": " Neoplasia Benigna do Olho e Anexos"
+ },
+ {
+  "CID": "D32",
+  "disease": " Neoplasia Benigna Das Meninges"
+ },
+ {
+  "CID": "D33",
+  "disease": " Neoplasia Benigna do Encéfalo e de Outras Partes do Sistema Nervoso Central"
+ },
+ {
+  "CID": "D34",
+  "disease": " Neoplasia Benigna da Glândula Tireóide"
+ },
+ {
+  "CID": "D35",
+  "disease": " Neoplasia Benigna de Outras Glândulas Endócrinas e Das Não Especificadas"
+ },
+ {
+  "CID": "D36",
+  "disease": " Neoplasia Benigna de Outras Localizações e de Localizações Não Especificadas"
+ },
+ {
+  "CID": "D37",
+  "disease": " Neoplasia de Comportamento Incerto ou Desconhecido da Cavidade Oral e Dos Órgãos Digestivos"
+ },
+ {
+  "CID": "D38",
+  "disease": " Neoplasia de Comportamento Incerto ou Desconhecido do Ouvido Médio e Dos Órgãos Respiratórios e Intratorácicos"
+ },
+ {
+  "CID": "D39",
+  "disease": " Neoplasia de Comportamento Incerto ou Desconhecido Dos Órgãos Genitais Femininos"
+ },
+ {
+  "CID": "D40",
+  "disease": " Neoplasia de Comportamento Incerto ou Desconhecido Dos Órgãos Genitais Masculinos"
+ },
+ {
+  "CID": "D41",
+  "disease": " Neoplasia de Comportamento Incerto ou Desconhecido Dos Órgãos Urinários"
+ },
+ {
+  "CID": "D42",
+  "disease": " Neoplasia de Comportamento Incerto ou Desconhecido Das Meninges"
+ },
+ {
+  "CID": "D43",
+  "disease": " Neoplasia de Comportamento Incerto ou Desconhecido do Encéfalo e do Sistema Nervoso Central"
+ },
+ {
+  "CID": "D44",
+  "disease": " Neoplasia de Comportamento Incerto ou Desconhecido Das Glândulas Endócrinas"
+ },
+ {
+  "CID": "D45",
+  "disease": " Policitemia Vera"
+ },
+ {
+  "CID": "D46",
+  "disease": " Síndromes Mielodisplásicas"
+ },
+ {
+  "CID": "D47",
+  "disease": " Outras Neoplasias de Comportamento Incerto ou Desconhecido Dos Tecidos Linfático, Hematopoético e Tecidos Correlatos"
+ },
+ {
+  "CID": "D48",
+  "disease": " Neoplasia de Comportamento Incerto ou Desconhecido de Outras Localizações e de Localizações Não Especificadas"
+ },
+ {
+  "CID": "D50",
+  "disease": " Anemia Por Deficiência de Ferro"
+ },
+ {
+  "CID": "D51",
+  "disease": " Anemia Por Deficiência de Vitamina B12"
+ },
+ {
+  "CID": "D52",
+  "disease": " Anemia Por Deficiência de Folato"
+ },
+ {
+  "CID": "D53",
+  "disease": " Outras Anemias Nutricionais"
+ },
+ {
+  "CID": "D55",
+  "disease": " Anemia Devida a Transtornos Enzimáticos"
+ },
+ {
+  "CID": "D56",
+  "disease": " Talassemia"
+ },
+ {
+  "CID": "D57",
+  "disease": " Transtornos Falciformes"
+ },
+ {
+  "CID": "D58",
+  "disease": " Outras Anemias Hemolíticas Hereditárias"
+ },
+ {
+  "CID": "D59",
+  "disease": " Anemia Hemolítica Adquirida"
+ },
+ {
+  "CID": "D60",
+  "disease": " Aplasia Pura da Série Vermelha, Adquirida (eritroblastopenia)"
+ },
+ {
+  "CID": "D61",
+  "disease": " Outras Anemias Aplásticas"
+ },
+ {
+  "CID": "D62",
+  "disease": " Anemia Aguda Pós-hemorrágica"
+ },
+ {
+  "CID": "D63",
+  "disease": " Anemia em Doenças Crônicas Classificadas em Outra Parte"
+ },
+ {
+  "CID": "D64",
+  "disease": " Outras Anemias"
+ },
+ {
+  "CID": "D65",
+  "disease": " Coagulação Intravascular Disseminada (síndrome de Desfibrinação)"
+ },
+ {
+  "CID": "D66",
+  "disease": " Deficiência Hereditária do Fator VIII"
+ },
+ {
+  "CID": "D67",
+  "disease": " Deficiência Hereditária do Fator IX"
+ },
+ {
+  "CID": "D68",
+  "disease": " Outros Defeitos da Coagulação"
+ },
+ {
+  "CID": "D69",
+  "disease": " Púrpura e Outras Afecções Hemorrágicas"
+ },
+ {
+  "CID": "D70",
+  "disease": " Agranulocitose"
+ },
+ {
+  "CID": "D71",
+  "disease": " Transtornos Funcionais Dos Neutrófilos Polimorfonucleares"
+ },
+ {
+  "CID": "D72",
+  "disease": " Outros Transtornos Dos Glóbulos Brancos"
+ },
+ {
+  "CID": "D73",
+  "disease": " Doenças do Baço"
+ },
+ {
+  "CID": "D74",
+  "disease": " Metemoglobinemia"
+ },
+ {
+  "CID": "D75",
+  "disease": " Outras Doenças do Sangue e Dos Órgãos Hematopoéticos"
+ },
+ {
+  "CID": "D76",
+  "disease": " Algumas Doenças Que Envolvem o Tecido Linforreticular e o Sistema Reticulohistiocítico"
+ },
+ {
+  "CID": "D77",
+  "disease": " Outros Transtornos do Sangue e Dos Órgãos Hematopoéticos em Doenças Classificadas em Outra Parte"
+ },
+ {
+  "CID": "D80",
+  "disease": " Imunodeficiência Com Predominância de Defeitos de Anticorpos"
+ },
+ {
+  "CID": "D81",
+  "disease": " Deficiências Imunitárias Combinadas"
+ },
+ {
+  "CID": "D82",
+  "disease": " \"Imunodeficiência Associada Com Outros Defeitos \"\"major\"\"\""
+ },
+ {
+  "CID": "D83",
+  "disease": " Imunodeficiência Comum Variável"
+ },
+ {
+  "CID": "D84",
+  "disease": " Outras Imunodeficiências"
+ },
+ {
+  "CID": "D86",
+  "disease": " Sarcoidose"
+ },
+ {
+  "CID": "D89",
+  "disease": " Outros Transtornos Que Comprometem o Mecanismo Imunitário Não Classificados em Outra Parte"
+ }
+]
