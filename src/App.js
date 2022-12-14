@@ -1,10 +1,11 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { AuthContextComponent } from "../src/contexts/authContext.js";
+import NavigationBar from "./components/NavigationBar/NavigationBar.js";
 import Login from "./components/User/Login.js";
 import Register from "./components/User/Register.js";
 import Home from "./pages/home/home.js";
-import Teste from "./components/teste.js";
+// import Teste from "./components/teste.js";
 import Processos from "./components/process/process.js";
 import { ToastContainer } from 'react-toastify';
 
@@ -14,11 +15,12 @@ function App() {
     <ToastContainer />
 			{/* inicia o contexto que permite verificar se o usuário está logado e quais suas informações */}
 			<AuthContextComponent>
+				<NavigationBar className="NavigationBar"/>
 				<Routes>
 					<Route path="/login" element={<Login />} />
 					<Route path="/cadastro" element={<Register />} />
 					<Route path="/" element={<Home />} />
-          			<Route path="/teste" element={<Teste/>}/>
+          			{/* <Route path="/teste" element={<Teste/>}/> */}
 					<Route path="/processos" element={<Processos />} />
 					{/* indica que essa rota está protegida */}
 					{/* <Route path="/perfil" element={ <ProtectedRoute Component={Profile} /> } /> */}
