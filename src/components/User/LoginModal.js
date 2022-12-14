@@ -46,7 +46,7 @@ function Login() {
             localStorage.setItem("loggedUser", JSON.stringify(response.data));
 
             //direciona o usuário para página do perfil
-            navigate('/perfil');
+            navigate('/processos');
 
         } catch (error) {
             console.log(error)
