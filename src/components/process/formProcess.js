@@ -1,6 +1,16 @@
 import { Button, Col, Form, Input, Layout, Row } from "antd";
 
 function FormProcesso() {
+
+	const onFinish = (values: any) => {
+		console.log("Success:", values);
+		
+	};
+
+	const onFinishFailed = (errorInfo: any) => {
+		console.log("Failed:", errorInfo);
+	};
+
 	return (
 		<Layout style={{ padding: "20px", backgroundColor: "#e0f1fe" }}>
 			<Form
@@ -9,9 +19,9 @@ function FormProcesso() {
 				labelCol={{ span: 12 }}
 				wrapperCol={{ span: 23 }}
 				initialValues={{ remember: false }}
-				// onFinish={onFinish}
+				onFinish={onFinish}
 				// form={form}
-				// onFinishFailed={onFinishFailed}
+				onFinishFailed={onFinishFailed}
 				autoComplete="off"
 			>
 				<Row align="bottom">

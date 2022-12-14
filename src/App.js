@@ -4,7 +4,6 @@ import { AuthContextComponent } from "../src/contexts/authContext.js";
 import Login from "./components/User/Login.js";
 import Register from "./components/User/Register.js";
 import Home from "./pages/home/home.js";
-import Teste from "./components/teste.js";
 import Processos from "./components/process/process.js";
 import { ToastContainer } from 'react-toastify';
 
@@ -18,8 +17,7 @@ function App() {
 					<Route path="/login" element={<Login />} />
 					<Route path="/cadastro" element={<Register />} />
 					<Route path="/" element={<Home />} />
-          			<Route path="/teste" element={<Teste/>}/>
-					<Route path="/processos" element={<Processos />} />
+          			<Route path="/processos" element={<Processos />} />
 					{/* indica que essa rota está protegida */}
 					{/* <Route path="/perfil" element={ <ProtectedRoute Component={Profile} /> } /> */}
 				</Routes>
