@@ -37,7 +37,7 @@ function Register() {
                 // requisição método POST
             await api.post("/user/register", { ...form })
     
-            navigate('/processos')
+            navigate('/')
         } catch (error) {
             console.log(error)
         } 
