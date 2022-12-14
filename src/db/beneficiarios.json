@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Sérgio Renan da Silva",
+        "CPF": "931.042.761-29",
+        "healthPlan": "639a58f4745eee069c05fdca"
+    },
+    {
+        "name": "Juliano Tamoio",
+        "CPF": "384.397.815-80",
+        "healthPlan": "639a58f4745eee069c05fdcb"
+    },
+    {
+        "name": "Emilly Iasmin Prado",
+        "CPF": "183.090.595-31",
+        "healthPlan": "639a58f4745eee069c05fdcc"
+    },
+    {
+        "name": "Alexandre Joaquin Gonçalves",
+        "CPF": "657.330.958-81",
+        "healthPlan": "639a58f4745eee069c05fdd1"
+    },
+    {
+        "name": "Jonas Daniel Campos Neto",
+        "CPF": "234.394.851-88",
+        "healthPlan": "639a58f4745eee069c05fdd2"
+    },
+    {
+        "name": "Luis Cruz de Arruda Neto",
+        "CPF": "190.162.961-90",
+        "healthPlan": "639a58f4745eee069c05fdd9"
+    },
+    {
+        "name": "Miguel Godói Padilha Jr.",
+        "CPF": "268.501.276-16",
+        "healthPlan": "639a58f4745eee069c05fddd"
+    }
+]

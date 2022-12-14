@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, memo, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { api } from '../api/api.js';
 
@@ -14,16 +14,22 @@ function ProcessContextComponent (props) {
 
     const [lawsuit, setLawsuit] = useState([]);
 
-    async function saveProcess (values) {
+    function saveProcess (values) {
         
-        const newDataProcess = {
-            lawsuitNumber: values.processo
-        }
-        console.log(newDataProcess);
-        await setDataProcess(newDataProcess);
-        console.log(dataProcess);
+        // const newDataProcess = {
+        //     lawsuitNumber: values.processo
+        // }
+        // console.log(newDataProcess);
         
-        CompiledData();
+        setDataProcess(1);
+ 
+        // setTimeout(() => {
+        
+            console.log(dataProcess);
+            // CompiledData();
+            
+        // }, "20000");
+        
         
     }
 
@@ -71,7 +77,9 @@ function ProcessContextComponent (props) {
 	    
     }
 
-    const CompiledData = async () => {
+    const CompiledData = () => {
+
+        console.log(dataProcess);
 
         const newLawsuit = {
             
@@ -97,9 +105,11 @@ function ProcessContextComponent (props) {
             )
         }
 
-        await setLawsuit(newLawsuit);
+       setLawsuit(newLawsuit);
 
-        handleSubmit();
+       console.log(lawsuit);
+
+        // handleSubmit();
 
     }
 
