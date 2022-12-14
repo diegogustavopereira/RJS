@@ -1,14 +1,19 @@
 import { Button, Col, Form, Input, Layout, Row } from "antd";
+import { useContext } from "react";
+import { FormDatasContext } from "../../contexts/formContext.js";
 
 function FormProcesso() {
 
+	const { saveProcess } = useContext(FormDatasContext);
+
 	const onFinish = (values: any) => {
-		console.log("Success:", values);
-		
+		// console.log("Success:", values);
+		saveProcess(values);
 	};
 
 	const onFinishFailed = (errorInfo: any) => {
 		console.log("Failed:", errorInfo);
+		
 	};
 
 	return (
@@ -33,7 +38,7 @@ function FormProcesso() {
 				<Col span={4}>
 				<Form.Item>
 						<Button type="primary" htmlType="submit">
-							Enviar
+							Concluir e Enviar
 						</Button>
 					</Form.Item>
 				</Col>

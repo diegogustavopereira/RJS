@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
 	Button,
 	Col,
@@ -7,35 +7,22 @@ import {
 	Input,
 	Layout,
 	Popconfirm,
-	Radio,
 	Row,
 	Table,
 } from "antd";
 import Column from "antd/es/table/Column";
 import del from "../../images/del.png";
+import { FormDatasContext } from "../../contexts/formContext.js";
 
 function DataDrugs2() {
 	const [form] = Form.useForm();
 
-	const [dataDrug, setDataDrug] = useState([]);
-	const [countDrug, setCountDrug] = useState(1);
+	const { saveDrug, deleteDrug, dataDrug } = useContext(FormDatasContext);
 
 	function FormDrug() {
 		const onFinish = (values: any) => {
 			console.log("Success:", values);
-			const newData = {
-				key: countDrug,
-                diseaseCID: values.diseaseCID,
-                drug: values.drug,
-                amount: values.amount,
-                price: values.price,
-				total: values.amount * values.price,
-				
-			};
-			console.log(newData);
-
-			setDataDrug([...dataDrug, newData]);
-			setCountDrug(countDrug + 1);
+			saveDrug(values);
 
 			form.resetFields();
 		};
@@ -67,12 +54,12 @@ function DataDrugs2() {
 							<Input />
 						</Form.Item>
 					</Col>
-                    <Col span={4}>
+					<Col span={4}>
 						<Form.Item label="Quantidade" name="amount">
 							<Input />
 						</Form.Item>
 					</Col>
-                    <Col span={4}>
+					<Col span={4}>
 						<Form.Item label="Valor Unitário" name="price">
 							<Input />
 						</Form.Item>
@@ -91,38 +78,33 @@ function DataDrugs2() {
 
 	function TableDrugs() {
 		const handleDelete = (key) => {
-			console.log(key);
-			console.log(dataDrug);
-			const newData = dataDrug.filter((item) => item.key !== key);
-			setDataDrug(newData);
-	    };
+			deleteDrug(key);
+		};
 
 		return (
-			
-				<Table dataSource={dataDrug}>
-					<Column title="CID" dataIndex="diseaseCID" key="diseaseCID" />
-					<Column title="Medicamento" dataIndex="drug" key="drug" />
-                    <Column title="Quantidade" dataIndex="amount" key="amount" />
-					<Column title="Preço Unitário" dataIndex="price" key="price" />
-					<Column title="Total" dataIndex="total" key="total" />
-					<Column
-						title=""
-						key="action"
-						render={(_, record) =>
-							dataDrug.length >= 1 ? (
-								<Popconfirm
-									title="Tem certeza que deseja apagar?"
-									onConfirm={() => handleDelete(record.key)}
-								>
-									<a>
-										<Image preview={false} src={del} width={20} />
-									</a>
-								</Popconfirm>
-							) : null
-						}
-					/>
-				</Table>
-			
+			<Table dataSource={dataDrug}>
+				<Column title="CID" dataIndex="diseaseCID" key="diseaseCID" />
+				<Column title="Medicamento" dataIndex="drug" key="drug" />
+				<Column title="Quantidade" dataIndex="amount" key="amount" />
+				<Column title="Preço Unitário" dataIndex="price" key="price" />
+				<Column title="Total" dataIndex="total" key="total" />
+				<Column
+					title=""
+					key="action"
+					render={(_, record) =>
+						dataDrug.length >= 1 ? (
+							<Popconfirm
+								title={"Tem certeza que deseja apagar?"}
+								onConfirm={() => handleDelete(record.key)}
+							>
+								<a>
+									<Image preview={false} src={del} width={20} />
+								</a>
+							</Popconfirm>
+						) : null
+					}
+				/>
+			</Table>
 		);
 	}
 
@@ -134,4 +116,4 @@ function DataDrugs2() {
 	);
 }
 
-export default DataDrugs2
+export default DataDrugs2;

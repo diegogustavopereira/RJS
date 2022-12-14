@@ -5,10 +5,6 @@ import NavigationBar from "./components/NavigationBar/NavigationBar.js";
 import Login from "./components/User/Login.js";
 import Register from "./components/User/Register.js";
 import Home from "./pages/home/home.js";
-<<<<<<< HEAD
-=======
-// import Teste from "./components/teste.js";
->>>>>>> 792ea4517a529883bbb05d86f476a4631abf9bbd
 import Processos from "./components/process/process.js";
 import CourtInformation from "./components/CourtInformation/courtInformation.js";
 import HealthPlans from "./components/HealthPlans/HealthPlans.js";
@@ -27,17 +23,12 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/cadastro" element={<Register />} />
-<<<<<<< HEAD
 					<Route path="/" element={<Home />} />
           			<Route path="/processos" element={<Processos />} />
-=======
-          			{/* <Route path="/teste" element={<Teste/>}/> */}
-					<Route path="/processos" element={<Processos />} />
-					<Route path="/court-information" element={<CourtInformation />} />
+          			<Route path="/court-information" element={<CourtInformation />} />
 					<Route path="/health-plan" element={<HealthPlans />} />
 					<Route path="/beneficiary" element={<Beneficiary />} />
 					<Route path="/drugs" element={<Drugs />} />
->>>>>>> 792ea4517a529883bbb05d86f476a4631abf9bbd
 					{/* indica que essa rota está protegida */}
 					{/* <Route path="/perfil" element={ <ProtectedRoute Component={Profile} /> } /> */}
 				</Routes>

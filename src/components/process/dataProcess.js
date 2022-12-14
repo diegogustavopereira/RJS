@@ -13,22 +13,18 @@ import {
 } from "antd";
 import Column from "antd/es/table/Column";
 import del from "../../images/del.png";
-import { FormContextDatas } from "../../contexts/formContext.js";
+import { FormDatasContext } from "../../contexts/formContext.js";
 
-function DataProcess({dataParte}) {
+function DataProcess() {
 
-	const context = useContext(FormContextDatas);
-	 
-	const data = context.dataParte;
-
-	console.log(data);
+	const { saveParte, deleteParte, dataParte } = useContext(FormDatasContext);
 
 	const [form] = Form.useForm();
 
 	function FormDadosProcesso() {
 		const onFinish = (values: any) => {
 			console.log("Success:", values);
-			context.saveParte(values);
+			saveParte(values);
 
 			form.resetFields();
 		};
@@ -82,12 +78,12 @@ function DataProcess({dataParte}) {
 
 	function TablePartes() {
 		const handleDelete = (key) => {
-			context.deleteParte(key);
+			deleteParte(key);
 	    };
 
 		return (
 			
-				<Table dataSource={data}>
+				<Table dataSource={dataParte}>
 					<Column title="Parte" dataIndex="parte" key="parte" />
 					<Column title="CPF/CNPJ" dataIndex="cpfCnpj" key="cpfCnpj" />
 					<Column title="Posição" dataIndex="polo" key="polo" />
