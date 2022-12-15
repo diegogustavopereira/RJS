@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
-import { Form, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { api } from "../../api/api.js";
 
 function Beneficiary() {
@@ -60,15 +60,7 @@ function Beneficiary() {
           Adicionar Novo Beneficiário
         </Link>
       </Button>
-      {/* <Form className="my-4">
-        <Form.Control
-          type="search"
-          placeholder="Procurar Plano de Saúde"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </Form> */}
-      <Table className="mt-4" striped bordered hover>
+      <Table className="mt-4" striped bordered hover responsive>
         <thead>
           <tr>
             <th>Nome</th>
