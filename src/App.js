@@ -17,8 +17,20 @@ import "react-toastify/dist/ReactToastify.css";
 import ProtectedRoute from "./components/ProtectedRoute.js";
 import Users from "./components/User/users";
 import { useState } from "react";
+import AddBeneficiary from "./components/Beneficiary/AddBeneficiary";
 
 function App() {
+  const [healthPlanForm, setHealthPlanForm] = useState({
+    name: "",
+    CNPJ: "",
+  });
+
+  const [beneficiaryForm, setBeneficiaryForm] = useState({
+    name: "",
+    CPF: "",
+    healthPlan: "",
+  });
+
   const [drugForm, setDrugForm] = useState({
     name: "",
     CID: "",
@@ -47,8 +59,26 @@ function App() {
             element={<ProtectedRoute Component={HealthPlans} />}
           />
           <Route
+            path="/health-plan/create"
+            element={
+              <AddHealthPlan
+                healthPlanForm={healthPlanForm}
+                setHealthPlanForm={setHealthPlanForm}
+              />
+            }
+          />
+          <Route
             path="/beneficiary"
             element={<ProtectedRoute Component={Beneficiary} />}
+          />
+          <Route
+            path="/beneficiary/create"
+            element={
+              <AddBeneficiary
+                beneficiaryForm={beneficiaryForm}
+                setBeneficiaryForm={setBeneficiaryForm}
+              />
+            }
           />
           <Route path="/drug" element={<ProtectedRoute Component={Drugs} />} />
           <Route
