@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { api } from "../../api/api.js";
+import { useParams } from "react-router-dom";
 
-function Beneficiary() {
+function Beneficiary({beneficiaryForm, setBeneficiaryForm}) {
   const [beneficiary, setBeneficiary] = useState([]);
+  const { id } = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [search, setSearch] = useState("");
 
@@ -32,22 +34,16 @@ function Beneficiary() {
           <td>{beneficiary.CPF}</td>
           <td>{beneficiary.healthPlan}</td>
           <td>
-            <Button variant="primary" size="sm" style={{ margin: "5px" }}>
-              <Link
-                className="nav-link"
-                to={`/beneficiary/edit/${beneficiary._id}`}
-              >
-                Alterar
+          <Button variant="primary" size="sm" style={{ margin: "5px" }}>
+              <Link className="nav-link" to={`/beneficiary/${beneficiary._id}`}>
+              Ver Detalhes
               </Link>
             </Button>
-            <Button variant="danger" size="sm" style={{ margin: "5px" }}>
-              <Link
-                className="nav-link"
-                to={`/beneficiary/delete/${beneficiary._id}`}
-              >
+            {/* <Button variant="danger" size="sm" style={{ margin: "5px" }}>
+              <Link className="nav-link" to={`/beneficiary/delete/${beneficiary._id}`}>
                 Excluir
               </Link>
-            </Button>
+            </Button> */}
           </td>
         </tr>
       );

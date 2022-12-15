@@ -83,8 +83,8 @@ function AddBeneficiary({ beneficiaryForm, setBeneficiaryForm }) {
           variant="info"
           type="submit"
           style={{ margin: "5px" }}
+          path="/beneficiary"
         >
-          <Link to={"/beneficiary"}>Voltar</Link>
         </Button>
       </Form>
     </Container>
