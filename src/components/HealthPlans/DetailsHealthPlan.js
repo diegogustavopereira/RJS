@@ -45,7 +45,6 @@ function HealthPlanDetails({ healthPlanForm, setHealthPlanForm }) {
 
           <Card.Title>CNPJ</Card.Title>
           <Card.Text>{healthPlan.CNPJ}</Card.Text>
-
         </Card.Body>
         <Row>
           <Col>

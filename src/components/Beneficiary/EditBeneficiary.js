@@ -21,7 +21,6 @@ function EditBeneficiary({ id, beneficiaryForm, setBeneficiaryForm }) {
   }, [id, setBeneficiaryForm]);
 
   const handleChange = (e) => {
-    
     setBeneficiaryForm({ ...beneficiaryForm, [e.target.name]: e.target.value });
   };
 
@@ -60,7 +59,6 @@ function EditBeneficiary({ id, beneficiaryForm, setBeneficiaryForm }) {
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
-
             <Form.Group className="mb-3">
               <Form.Label>Nome do Beneficiário</Form.Label>
               <Form.Control
@@ -91,7 +89,7 @@ function EditBeneficiary({ id, beneficiaryForm, setBeneficiaryForm }) {
                 onChange={handleChange}
               />
             </Form.Group>
-            
+
             <Button variant="success" type="submit">
               Atualizar beneficiário
             </Button>

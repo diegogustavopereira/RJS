@@ -25,8 +25,7 @@ function AddDrug({ drugForm, setDrugForm }) {
         draggable: true,
         progress: undefined,
         theme: "colored",
-    });
-
+      });
     } catch (error) {
       console.log(error);
     }
