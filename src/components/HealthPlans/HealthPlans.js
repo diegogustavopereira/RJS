@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
-import { Form, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { api } from "../../api/api.js";
+import { useParams } from "react-router-dom";
 
-function HealthPlans() {
+function HealthPlans(healthPlanForm, setHealthPlanForm) {
   const [healthPlan, setHealthPlan] = useState([]);
+  const { id } = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [search, setSearch] = useState("");
 
@@ -29,22 +31,10 @@ function HealthPlans() {
       return (
         <tr key={healthPlan._id}>
           <td>{healthPlan.name}</td>
-          <td>{healthPlan.CNPJ}</td>
           <td>
-            <Button variant="primary" size="sm" style={{ margin: "5px" }}>
-              <Link
-                className="nav-link"
-                to={`/health-plan/edit/${healthPlan._id}`}
-              >
-                Alterar
-              </Link>
-            </Button>
-            <Button variant="danger" size="sm" style={{ margin: "5px" }}>
-              <Link
-                className="nav-link"
-                to={`/health-plan/delete/${healthPlan._id}`}
-              >
-                Excluir
+            <Button variant="primary" style={{ margin: "5px" }}>
+              <Link className="nav-link" to={`/health-plan/${healthPlan._id}`}>
+                Ver Detalhes
               </Link>
             </Button>
           </td>
@@ -55,24 +45,15 @@ function HealthPlans() {
   return (
     <Container>
       <Button variant="success" size="lg" style={{ margin: "15px" }}>
-      <Link className="nav-link" to={"/health-plan/create"}>
-        Adicionar Novo Plano de Saúde
-      </Link>
+        <Link className="nav-link" to={"/health-plan/create"}>
+          Adicionar Novo Plano de Saúde
+        </Link>
       </Button>
-      {/* <Form className="my-4">
-        <Form.Control
-          type="search"
-          placeholder="Procurar Plano de Saúde"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </Form> */}
-      <Table className="mt-4" striped bordered hover>
+      <Table className="mt-4" striped bordered hover responsive>
         <thead>
           <tr>
             <th>Nome</th>
-            <th>CNPJ</th>
-            <th>Ações</th>
+            <th>Detalhar</th>
           </tr>
         </thead>
         <tbody>{renderHealthPlan}</tbody>

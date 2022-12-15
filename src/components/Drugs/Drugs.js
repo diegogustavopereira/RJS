@@ -1,42 +1,38 @@
 import { useEffect, useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
-import { Form, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { api } from "../../api/api.js";
+import { useParams } from "react-router-dom";
 
-function Drugs() {
-  const [drugs, setDrugs] = useState([]);
+function Drug(drugForm, setDrugForm) {
+  const [drug, setDrug] = useState([]);
+  const { id } = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
     try {
-      const fetchDrugs = async () => {
+      const fetchDrug = async () => {
         const response = await api.get("/drug");
-        setDrugs(response.data);
+        setDrug(response.data);
         setIsLoading(false);
       };
-      fetchDrugs();
+      fetchDrug();
     } catch (error) {
       console.log(error);
     }
   }, []);
 
-  const renderDrugs = drugs
-    .filter((drugs) => drugs.name.toLowerCase().includes(search.toLowerCase()))
-    .map((drugs) => {
+  const renderDrug = drug
+    .filter((drug) => drug.name.toLowerCase().includes(search.toLowerCase()))
+    .map((drug) => {
       return (
-        <tr key={drugs._id}>
-          <td>{drugs.name}</td>
-          <td>{drugs.CID}</td>
+        <tr key={drug._id}>
+          <td>{drug.name}</td>
           <td>
-            <Button variant="primary" size="sm" style={{ margin: "5px" }}>
-              <Link className="nav-link" to={`/drug/edit/${drugs._id}`}>
-                Alterar
-              </Link>
-            </Button>
-            <Button variant="danger" size="sm" style={{ margin: "5px" }}>
-              <Link className="nav-link" to={`/drug/delete/${drugs._id}`}>
-                Excluir
+            <Button variant="primary" style={{ margin: "5px" }}>
+              <Link className="nav-link" to={`/drug/${drug._id}`}>
+                Ver Detalhes
               </Link>
             </Button>
           </td>
@@ -51,26 +47,17 @@ function Drugs() {
           Adicionar Novo Medicamento
         </Link>
       </Button>
-      {/* <Form className="my-4">
-        <Form.Control
-          type="search"
-          placeholder="Procurar Plano de Saúde"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </Form> */}
-      <Table className="mt-4" striped bordered hover>
+      <Table className="mt-4" striped bordered hover responsive>
         <thead>
           <tr>
             <th>Nome</th>
-            <th>CID</th>
-            <th>Ações</th>
+            <th>Detalhar</th>
           </tr>
         </thead>
-        <tbody>{renderDrugs}</tbody>
+        <tbody>{renderDrug}</tbody>
       </Table>
     </Container>
   );
 }
 
-export default Drugs;
+export default Drug;
