@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
-import { Form, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { api } from "../../api/api.js";
+import { useParams } from "react-router-dom";
 
-function Beneficiary() {
+function Beneficiary({ beneficiaryForm, setBeneficiaryForm }) {
   const [beneficiary, setBeneficiary] = useState([]);
+  const { id } = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [search, setSearch] = useState("");
 
@@ -29,23 +31,10 @@ function Beneficiary() {
       return (
         <tr key={beneficiary._id}>
           <td>{beneficiary.name}</td>
-          <td>{beneficiary.CPF}</td>
-          <td>{beneficiary.healthPlan}</td>
           <td>
-            <Button variant="primary" size="sm" style={{ margin: "5px" }}>
-              <Link
-                className="nav-link"
-                to={`/beneficiary/edit/${beneficiary._id}`}
-              >
-                Alterar
-              </Link>
-            </Button>
-            <Button variant="danger" size="sm" style={{ margin: "5px" }}>
-              <Link
-                className="nav-link"
-                to={`/beneficiary/delete/${beneficiary._id}`}
-              >
-                Excluir
+            <Button variant="primary" style={{ margin: "5px" }}>
+              <Link className="nav-link" to={`/beneficiary/${beneficiary._id}`}>
+                Ver Detalhes
               </Link>
             </Button>
           </td>
@@ -60,21 +49,11 @@ function Beneficiary() {
           Adicionar Novo Beneficiário
         </Link>
       </Button>
-      {/* <Form className="my-4">
-        <Form.Control
-          type="search"
-          placeholder="Procurar Plano de Saúde"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </Form> */}
-      <Table className="mt-4" striped bordered hover>
+      <Table className="mt-4" striped bordered hover responsive>
         <thead>
           <tr>
             <th>Nome</th>
-            <th>CPF</th>
-            <th>Plano de Saúde</th>
-            <th>Ações</th>
+            <th>Detalhar</th>
           </tr>
         </thead>
         <tbody>{renderBeneficiary}</tbody>
