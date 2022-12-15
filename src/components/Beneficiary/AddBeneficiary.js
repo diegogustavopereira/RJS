@@ -25,8 +25,7 @@ function AddBeneficiary({ beneficiaryForm, setBeneficiaryForm }) {
         draggable: true,
         progress: undefined,
         theme: "colored",
-    });
-
+      });
     } catch (error) {
       console.log(error);
     }

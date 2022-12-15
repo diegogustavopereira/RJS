@@ -24,9 +24,7 @@ function Drug(drugForm, setDrugForm) {
   }, []);
 
   const renderDrug = drug
-    .filter((drug) =>
-      drug.name.toLowerCase().includes(search.toLowerCase())
-    )
+    .filter((drug) => drug.name.toLowerCase().includes(search.toLowerCase()))
     .map((drug) => {
       return (
         <tr key={drug._id}>

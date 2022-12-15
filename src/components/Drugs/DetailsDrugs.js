@@ -46,15 +46,10 @@ function DrugDetails({ drugForm, setDrugForm }) {
 
           <Card.Title>CID</Card.Title>
           <Card.Text>{drug.CID}</Card.Text>
-
         </Card.Body>
         <Row>
           <Col>
-            <EditDrug
-              id={id}
-              drugForm={drugForm}
-              setDrugForm={setDrugForm}
-            />
+            <EditDrug id={id} drugForm={drugForm} setDrugForm={setDrugForm} />
           </Col>
           <Col>
             <DeleteDrug id={id} />

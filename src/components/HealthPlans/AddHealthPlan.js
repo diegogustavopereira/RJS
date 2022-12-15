@@ -25,8 +25,7 @@ function AddHealthPlan({ healthPlanForm, setHealthPlanForm }) {
         draggable: true,
         progress: undefined,
         theme: "colored",
-    });
-
+      });
     } catch (error) {
       console.log(error);
     }

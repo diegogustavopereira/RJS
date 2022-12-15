@@ -21,7 +21,6 @@ function EditDrug({ id, drugForm, setDrugForm }) {
   }, [id, setDrugForm]);
 
   const handleChange = (e) => {
-    
     setDrugForm({ ...drugForm, [e.target.name]: e.target.value });
   };
 
@@ -60,7 +59,6 @@ function EditDrug({ id, drugForm, setDrugForm }) {
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
-
             <Form.Group className="mb-3">
               <Form.Label>Nome do Medicamento</Form.Label>
               <Form.Control
@@ -81,7 +79,7 @@ function EditDrug({ id, drugForm, setDrugForm }) {
                 onChange={handleChange}
               />
             </Form.Group>
-            
+
             <Button variant="success" type="submit">
               Atualizar Medicamento
             </Button>

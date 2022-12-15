@@ -21,7 +21,6 @@ function EditHealthPlan({ id, healthPlanForm, setHealthPlanForm }) {
   }, [id, setHealthPlanForm]);
 
   const handleChange = (e) => {
-    
     setHealthPlanForm({ ...healthPlanForm, [e.target.name]: e.target.value });
   };
 
@@ -60,7 +59,6 @@ function EditHealthPlan({ id, healthPlanForm, setHealthPlanForm }) {
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
-
             <Form.Group className="mb-3">
               <Form.Label>Nome do Plano de Saúde</Form.Label>
               <Form.Control
@@ -81,7 +79,7 @@ function EditHealthPlan({ id, healthPlanForm, setHealthPlanForm }) {
                 onChange={handleChange}
               />
             </Form.Group>
-            
+
             <Button variant="success" type="submit">
               Atualizar plano de saúde
             </Button>

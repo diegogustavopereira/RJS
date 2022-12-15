@@ -5,13 +5,13 @@ import { useLocation } from "react-router-dom";
 import logo from "../../images/sirejud_ico.png";
 
 function NavigationBar() {
-    const location = useLocation();
+  const location = useLocation();
 
-    if(location.pathname === "/") {
-        return null
-    }
-  
-    return (
+  if (location.pathname === "/") {
+    return null;
+  }
+
+  return (
     <div>
       <Navbar className="NavigationBar" bg="light" variant="light" expand="lg">
         <Container>
@@ -27,11 +27,11 @@ function NavigationBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/processos">Incluir Processo</Nav.Link>
-              <Nav.Link href="/court-information">Pesquisar Processo</Nav.Link>
+              {/* <Nav.Link href="/court-information">Pesquisar Processo</Nav.Link> */}
               <Nav.Link href="/health-plan">Planos de Saúde</Nav.Link>
               <Nav.Link href="/beneficiary">Beneficiários</Nav.Link>
               <Nav.Link href="/drug">Medicamentos</Nav.Link>
-              <Nav.Link href="/users">Usuários</Nav.Link>
+              {/* <Nav.Link href="/users">Usuários</Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
