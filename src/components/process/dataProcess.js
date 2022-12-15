@@ -17,14 +17,14 @@ import { FormDatasContext } from "../../contexts/formContext.js";
 
 function DataProcess() {
 
-	const { saveParte, deleteParte, dataParte } = useContext(FormDatasContext);
+	const { SaveParte, DeleteParte, dataParte } = useContext(FormDatasContext);
 
 	const [form] = Form.useForm();
 
 	function FormDadosProcesso() {
 		const onFinish = (values: any) => {
 			console.log("Success:", values);
-			saveParte(values);
+			SaveParte(values);
 
 			form.resetFields();
 		};
@@ -47,7 +47,7 @@ function DataProcess() {
 			>
 				<Row justify="center" align="bottom">
 					<Col span={10}>
-						<Form.Item label="Nome" name="parte">
+						<Form.Item label="Nome" name="name">
 							<Input />
 						</Form.Item>
 					</Col>
@@ -57,10 +57,10 @@ function DataProcess() {
 						</Form.Item>
 					</Col>
 					<Col span={5}>
-						<Form.Item name="polo">
+						<Form.Item name="position">
 							<Radio.Group>
-								<Radio value="autor"> Autor(a) </Radio>
-								<Radio value="reu"> Ré(u) </Radio>
+								<Radio value="Autor(a)"> Autor(a) </Radio>
+								<Radio value="Ré(u)"> Ré(u) </Radio>
 							</Radio.Group>
 						</Form.Item>
 					</Col>
@@ -78,15 +78,15 @@ function DataProcess() {
 
 	function TablePartes() {
 		const handleDelete = (key) => {
-			deleteParte(key);
+			DeleteParte(key);
 	    };
 
 		return (
 			
 				<Table dataSource={dataParte}>
-					<Column title="Parte" dataIndex="parte" key="parte" />
+					<Column title="Parte" dataIndex="name" key="name" />
 					<Column title="CPF/CNPJ" dataIndex="cpfCnpj" key="cpfCnpj" />
-					<Column title="Posição" dataIndex="polo" key="polo" />
+					<Column title="Posição" dataIndex="position" key="position" />
 					<Column
 						title=""
 						key="action"

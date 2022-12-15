@@ -26,13 +26,11 @@ function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        console.log(form);
-        
         if(form.email === form.confirmEmail && form.password === form.confirmPassword) {
+            
 
-            await console.log(form);
-        
         try {
+            console.log(form);
             // criar a requisição para enviar este novo usuário
                 // requisição método POST
             await api.post("/user/register", { ...form })

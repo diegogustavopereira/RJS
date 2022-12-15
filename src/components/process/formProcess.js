@@ -1,14 +1,18 @@
 import { Button, Col, Form, Input, Layout, Row } from "antd";
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { FormDatasContext } from "../../contexts/formContext.js";
 
 function FormProcesso() {
 
-	const { saveProcess } = useContext(FormDatasContext);
+	const navigate = useNavigate()
+
+	const { SaveProcess } = useContext(FormDatasContext);
 
 	const onFinish = (values: any) => {
-		// console.log("Success:", values);
-		saveProcess(values);
+		SaveProcess(values);
+		navigate('/court-information');
+
 	};
 
 	const onFinishFailed = (errorInfo: any) => {
@@ -25,7 +29,6 @@ function FormProcesso() {
 				wrapperCol={{ span: 23 }}
 				initialValues={{ remember: false }}
 				onFinish={onFinish}
-				// form={form}
 				onFinishFailed={onFinishFailed}
 				autoComplete="off"
 			>

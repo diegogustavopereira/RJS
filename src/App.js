@@ -12,6 +12,7 @@ import Drugs from "./components/Drugs/Drugs";
 import { ToastContainer } from 'react-toastify';
 import ProtectedRoute from "./components/ProtectedRoute.js";
 import Users from "./components/User/users";
+import DataDrugs2 from "./components/process/dataDrugs2.js";
 
 function App() {
 	return (
@@ -30,6 +31,7 @@ function App() {
 					<Route path="/beneficiary" element={<ProtectedRoute Component={Beneficiary} />} />
 					<Route path="/drugs" element={<ProtectedRoute Component={Drugs} />} />
 					<Route path="/users" element={<ProtectedRoute Component={Users} />} />
+					<Route path="/teste" element={<DataDrugs2/>}/>
 					{/* indica que essa rota está protegida */}
 					{/* <Route path="/perfil" element={ <ProtectedRoute Component={Profile} /> } /> */}
 				</Routes>
