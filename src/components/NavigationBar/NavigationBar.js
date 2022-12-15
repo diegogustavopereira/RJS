@@ -30,7 +30,7 @@ function NavigationBar() {
               <Nav.Link href="/court-information">Pesquisar Processo</Nav.Link>
               <Nav.Link href="/health-plan">Planos de Saúde</Nav.Link>
               <Nav.Link href="/beneficiary">Beneficiários</Nav.Link>
-              <Nav.Link href="/drugs">Medicamentos</Nav.Link>
+              <Nav.Link href="/drug">Medicamentos</Nav.Link>
               <Nav.Link href="/users">Usuários</Nav.Link>
             </Nav>
           </Navbar.Collapse>

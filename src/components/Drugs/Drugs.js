@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
-import { Form, Link } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 import { api } from "../../api/api.js";
 
 function Drugs() {
   const [drugs, setDrugs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [search, setSearch] = useState("");
+  const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     try {
@@ -34,15 +37,35 @@ function Drugs() {
                 Alterar
               </Link>
             </Button>
-            <Button variant="danger" size="sm" style={{ margin: "5px" }}>
-              <Link className="nav-link" to={`/drug/delete/${drugs._id}`}>
-                Excluir
-              </Link>
+            <Button
+              variant="danger"
+              size="sm"
+              style={{ margin: "5px" }}
+              onClick={() => deleteDrug(drugs._id)}
+            >
+              {/* <Link className="nav-link" to={`/drug/delete/${drugs._id}`}> */}
+              Excluir
+              {/* </Link> */}
             </Button>
           </td>
         </tr>
       );
     });
+
+  const deleteDrug = async (id) => {
+    await api.delete(`drugs/delete/${id}`);
+    navigate("/drug");
+    toast.success("Medicamento excluído com sucesso!", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  };
 
   return (
     <Container>
