@@ -8,16 +8,18 @@ import Processos from "./components/process/process.js";
 import CourtInformation from "./components/CourtInformation/courtInformation.js";
 import HealthPlans from "./components/HealthPlans/HealthPlans.js";
 import AddHealthPlan from "./components/HealthPlans/AddHealthPlan.js";
-import Beneficiary from "./components/Beneficiary/Beneficiary";
-import Drugs from "./components/Drugs/Drugs";
+import HealthPlanDetails from "./components/HealthPlans/DetailsHealthPlan";
+import Beneficiary from "./components/Beneficiary/Beneficiary.js";
+import AddBeneficiary from "./components/Beneficiary/AddBeneficiary.js";
+import BeneficiaryDetails from "./components/Beneficiary/DetailsBeneficiary.js";
+import Drugs from "./components/Drugs/Drugs.js";
 import AddDrug from "./components/Drugs/AddDrug.js";
 import EditDrug from "./components/Drugs/EditDrug.js";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ProtectedRoute from "./components/ProtectedRoute.js";
-import Users from "./components/User/users";
+import Users from "./components/User/users.js";
 import { useState } from "react";
-import AddBeneficiary from "./components/Beneficiary/AddBeneficiary";
 
 function App() {
   const [healthPlanForm, setHealthPlanForm] = useState({
@@ -68,6 +70,15 @@ function App() {
             }
           />
           <Route
+            path="/health-plan/:id"
+            element={
+              <HealthPlanDetails
+                healthPlanForm={healthPlanForm}
+                setHealthPlanForm={setHealthPlanForm}
+              />
+            }
+          />
+          <Route
             path="/beneficiary"
             element={<ProtectedRoute Component={Beneficiary} />}
           />
@@ -75,6 +86,15 @@ function App() {
             path="/beneficiary/create"
             element={
               <AddBeneficiary
+                beneficiaryForm={beneficiaryForm}
+                setBeneficiaryForm={setBeneficiaryForm}
+              />
+            }
+          />
+          <Route
+            path="/beneficiary/:id"
+            element={
+              <BeneficiaryDetails
                 beneficiaryForm={beneficiaryForm}
                 setBeneficiaryForm={setBeneficiaryForm}
               />
