@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { api } from "../../api/api.js";
 
-function EditBeneficiary({ id, beneficiaryForm, setBeneficiaryForm }) {
+function EditHealthPlan({ id, healthPlanForm, setHealthPlanForm }) {
   const navigate = useNavigate();
   const [show, setShow] = useState(false);
 
@@ -12,28 +12,28 @@ function EditBeneficiary({ id, beneficiaryForm, setBeneficiaryForm }) {
   const handleShow = () => setShow(true);
 
   useEffect(() => {
-    const fetchBeneficiary = async () => {
-      const response = await api.get(`/beneficiary/${id}`);
-      setBeneficiaryForm(response.data);
+    const fetchHealthPlan = async () => {
+      const response = await api.get(`/health-plan/${id}`);
+      setHealthPlanForm(response.data);
     };
 
-    fetchBeneficiary();
-  }, [id, setBeneficiaryForm]);
+    fetchHealthPlan();
+  }, [id, setHealthPlanForm]);
 
   const handleChange = (e) => {
     
-    setBeneficiaryForm({ ...beneficiaryForm, [e.target.name]: e.target.value });
+    setHealthPlanForm({ ...healthPlanForm, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      await api.put(`beneficiary/edit/${id}`, beneficiaryForm);
+      await api.put(`health-plan/edit/${id}`, healthPlanForm);
 
-      navigate("/beneficiary");
+      navigate("/health-plan");
 
-      toast.success("Beneficiário atualizado!", {
+      toast.success("Plano de Saúde atualizado!", {
         position: "top-center",
         autoClose: 2000,
         hideProgressBar: false,
@@ -56,44 +56,34 @@ function EditBeneficiary({ id, beneficiaryForm, setBeneficiaryForm }) {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Editar Beneficiário</Modal.Title>
+          <Modal.Title>Editar Plano de Saúde</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
 
             <Form.Group className="mb-3">
-              <Form.Label>Nome do Beneficiário</Form.Label>
+              <Form.Label>Nome do Plano de Saúde</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Insira o nome completo do beneficiário"
+                placeholder="Insira o nome completo do plano de saúde"
                 name="name"
-                value={beneficiaryForm.name}
+                value={healthPlanForm.name}
                 onChange={handleChange}
               />
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>CPF</Form.Label>
+              <Form.Label>CNPJ</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Insira o CPF do beneficiário"
-                name="CPF"
-                value={beneficiaryForm.CPF}
-                onChange={handleChange}
-              />
-            </Form.Group>
-            <Form.Group className="mb-3">
-              <Form.Label>Plano de Saúde</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Insira o plano de saúde do beneficiário"
-                name="healthPlan"
-                value={beneficiaryForm.healthPlan}
+                placeholder="Insira o CNPJ do plano de saúde"
+                name="CNPJ"
+                value={healthPlanForm.CNPJ}
                 onChange={handleChange}
               />
             </Form.Group>
             
             <Button variant="success" type="submit">
-              Atualizar beneficiário
+              Atualizar plano de saúde
             </Button>
           </Form>
         </Modal.Body>
@@ -102,4 +92,4 @@ function EditBeneficiary({ id, beneficiaryForm, setBeneficiaryForm }) {
   );
 }
 
-export default EditBeneficiary;
+export default EditHealthPlan;

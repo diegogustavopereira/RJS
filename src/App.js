@@ -8,7 +8,10 @@ import Processos from "./components/process/process.js";
 import CourtInformation from "./components/CourtInformation/courtInformation.js";
 import HealthPlans from "./components/HealthPlans/HealthPlans.js";
 import AddHealthPlan from "./components/HealthPlans/AddHealthPlan.js";
+import HealthPlanDetails from "./components/HealthPlans/DetailsHealthPlan";
 import Beneficiary from "./components/Beneficiary/Beneficiary.js";
+import AddBeneficiary from "./components/Beneficiary/AddBeneficiary.js";
+import BeneficiaryDetails from "./components/Beneficiary/DetailsBeneficiary.js";
 import Drugs from "./components/Drugs/Drugs.js";
 import AddDrug from "./components/Drugs/AddDrug.js";
 import EditDrug from "./components/Drugs/EditDrug.js";
@@ -17,9 +20,6 @@ import "react-toastify/dist/ReactToastify.css";
 import ProtectedRoute from "./components/ProtectedRoute.js";
 import Users from "./components/User/users.js";
 import { useState } from "react";
-import AddBeneficiary from "./components/Beneficiary/AddBeneficiary.js";
-import EditBeneficiary from "./components/Beneficiary/EditBeneficiary";
-import BeneficiaryDetails from "./components/Beneficiary/DetailsBeneficiary.js";
 
 function App() {
   const [healthPlanForm, setHealthPlanForm] = useState({
@@ -64,6 +64,15 @@ function App() {
             path="/health-plan/create"
             element={
               <AddHealthPlan
+                healthPlanForm={healthPlanForm}
+                setHealthPlanForm={setHealthPlanForm}
+              />
+            }
+          />
+          <Route
+            path="/health-plan/:id"
+            element={
+              <HealthPlanDetails
                 healthPlanForm={healthPlanForm}
                 setHealthPlanForm={setHealthPlanForm}
               />

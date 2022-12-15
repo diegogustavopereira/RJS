@@ -34,7 +34,7 @@ function AddBeneficiary({ beneficiaryForm, setBeneficiaryForm }) {
 
   return (
     <Container>
-      <h2>Cadastrar Novo Medicamento</h2>
+      <h2>Cadastrar Novo Beneficiário</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>Nome do Beneficiário</Form.Label>
@@ -83,8 +83,8 @@ function AddBeneficiary({ beneficiaryForm, setBeneficiaryForm }) {
           variant="info"
           type="submit"
           style={{ margin: "5px" }}
-          path="/beneficiary"
         >
+          <Link to={"/beneficiary"}>Voltar</Link>
         </Button>
       </Form>
     </Container>
