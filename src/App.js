@@ -8,13 +8,13 @@ import Processos from "./components/process/process.js";
 import CourtInformation from "./components/CourtInformation/courtInformation.js";
 import HealthPlans from "./components/HealthPlans/HealthPlans.js";
 import AddHealthPlan from "./components/HealthPlans/AddHealthPlan.js";
-import HealthPlanDetails from "./components/HealthPlans/DetailsHealthPlan";
+import HealthPlanDetails from "./components/HealthPlans/DetailsHealthPlan.js";
 import Beneficiary from "./components/Beneficiary/Beneficiary.js";
 import AddBeneficiary from "./components/Beneficiary/AddBeneficiary.js";
 import BeneficiaryDetails from "./components/Beneficiary/DetailsBeneficiary.js";
-import Drugs from "./components/Drugs/Drugs.js";
+import Drug from "./components/Drugs/Drugs.js";
 import AddDrug from "./components/Drugs/AddDrug.js";
-import EditDrug from "./components/Drugs/EditDrug.js";
+import DrugDetails from "./components/Drugs/DetailsDrugs.js";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ProtectedRoute from "./components/ProtectedRoute.js";
@@ -100,14 +100,17 @@ function App() {
               />
             }
           />
-          <Route path="/drug" element={<ProtectedRoute Component={Drugs} />} />
+          <Route
+            path="/drug"
+            element={<ProtectedRoute Component={Drug} />}
+          />
           <Route
             path="/drug/create"
             element={<AddDrug drugForm={drugForm} setDrugForm={setDrugForm} />}
           />
           <Route
-            path="/drug/edit/:id"
-            element={<EditDrug drugForm={drugForm} setDrugForm={setDrugForm} />}
+            path="/drug/:id"
+            element={<DrugDetails drugForm={drugForm} setDrugForm={setDrugForm} />}
           />
           <Route path="/users" element={<ProtectedRoute Component={Users} />} />
           {/* indica que essa rota está protegida */}
