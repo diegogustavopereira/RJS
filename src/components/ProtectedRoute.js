@@ -14,7 +14,7 @@ function ProtectedRoute({ Component }) {
         return <Component />
     } else {
         //retorna o usuário para o login
-        return <Navigate to="/login" />
+        return <Navigate to="/" />
     }
 }
 

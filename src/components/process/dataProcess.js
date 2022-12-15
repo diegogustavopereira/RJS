@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext } from "react";
 import {
 	Button,
 	Col,
@@ -13,26 +13,18 @@ import {
 } from "antd";
 import Column from "antd/es/table/Column";
 import del from "../../images/del.png";
+import { FormDatasContext } from "../../contexts/formContext.js";
 
 function DataProcess() {
-	const [form] = Form.useForm();
 
-	const [dataParte, setDataParte] = useState([]);
-	const [countParte, setCountParte] = useState(1);
+	const { saveParte, deleteParte, dataParte } = useContext(FormDatasContext);
+
+	const [form] = Form.useForm();
 
 	function FormDadosProcesso() {
 		const onFinish = (values: any) => {
 			console.log("Success:", values);
-			const newData = {
-				key: countParte,
-				parte: values.parte,
-				cpfCnpj: values.cpfCnpj,
-				polo: values.polo,
-			};
-			console.log(newData);
-
-			setDataParte([...dataParte, newData]);
-			setCountParte(countParte + 1);
+			saveParte(values);
 
 			form.resetFields();
 		};
@@ -86,10 +78,7 @@ function DataProcess() {
 
 	function TablePartes() {
 		const handleDelete = (key) => {
-			console.log(key);
-			console.log(dataParte);
-			const newData = dataParte.filter((item) => item.key !== key);
-			setDataParte(newData);
+			deleteParte(key);
 	    };
 
 		return (
