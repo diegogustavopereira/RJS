@@ -48,7 +48,7 @@ function AddDrug({ drugForm, setDrugForm }) {
         </Form.Group>
 
         <Form.Group className="mb-3">
-          <Form.Label>CID</Form.Label>
+          <Form.Label>CID da Doença</Form.Label>
           <Form.Control
             type="text"
             placeholder="Insira o CID da doença"
