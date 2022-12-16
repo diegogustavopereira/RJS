@@ -7,7 +7,8 @@ import axios from "axios";
 //development: ""
 //production: ""
 const apiURL = {
-    development: "http://localhost:8080"
+    development: "http://localhost:8080", production: "https://api-sirejud.cyclic.app"
+
 };
 
 //cria a base URL da api
